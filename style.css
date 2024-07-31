@@ -1,9 +1,10 @@
-body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li, form, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,15 +12,22 @@ body {
     color: #333;
 }
 
+/* Container para centralizar conteúdo e definir largura máxima */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #0056b3;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 nav ul {
@@ -35,14 +43,19 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Estilo do conteúdo principal */
 main {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 section {
@@ -51,10 +64,45 @@ section {
 
 h2 {
     color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
+/* Estilo do formulário de contato */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #004494;
+}
+
+/* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #0056b3;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -63,13 +111,29 @@ footer {
     bottom: 0;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     nav ul {
         text-align: center;
+        padding: 0;
     }
 
     nav ul li {
         display: block;
         margin: 5px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
     }
 }
