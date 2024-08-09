@@ -144,6 +144,12 @@ footer {
     }
 }
 
-.sobre {
-    font-family: 'Courier New', Courier, monospace;
-}
+<style>
+    body {
+        font-family: Arial, sans-serif; /* Fonte padrão para o site */
+    }
+    
+    p.code {
+        font-family: 'Fira Code', monospace;
+    }
+</style>
