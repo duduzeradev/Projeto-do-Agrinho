@@ -144,10 +144,6 @@ footer {
     }
 }
 
-@font-face {
-    font-family: 'MinhaFontePersonalizada';
-    src: url('fonts/minhafontepersonalizada.ttf') format('truetype');
-}
 
 p.code {
     font-family: 'MinhaFontePersonalizada', monospace;
